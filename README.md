@@ -1,8 +1,8 @@
 #Pure CSS3 Slider
 
-Image slider with CSS3 animation.
+Image slider with CSS3 animation. No JavaScript, pure CSS3 only.
 
-Works only in in modern browsers with CSS3 support.
+It works only in modern browsers with CSS3 support.
 
 #Demo
 
