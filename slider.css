@@ -1,0 +1,76 @@
+/*
+ * Author: Petr Mukhortov
+ * Author URI: http://mukhortov.com/
+*/
+
+/* Page Style */
+body {
+	font: normal 14px Helvetica Neue, Arial, sans-serif;
+	background: #fafafa;
+}
+h1 {
+	font-weight: 200;
+	font-size: 36px;
+	text-align: center;
+	color: #333;
+}
+p {
+	color: #aaa;
+	text-align: right;
+}
+.container {
+	width: 800px;
+	margin: auto;
+}
+
+
+/* Slider */
+.slider,
+.slider li {
+	width: 800px;
+	height: 300px;
+}
+
+.slider {
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	border-radius: 3px;
+	word-spacing: -2px; /* removing inline elements spacing */
+	letter-spacing: -2px;
+}
+
+.slider li {
+	display: inline-block;
+	word-spacing: normal; /* inline elements spacing */
+	letter-spacing: normal;
+}
+
+@keyframes slider {
+	0%, 18% {margin-left: 0;}
+	20%, 38% {margin-left: -100%;}
+	40%, 58% {margin-left: -200%;}
+	60%, 78% {margin-left: -300%;}
+	80%, 99.9% {margin-left: -400%;}
+	100% {margin-left: 0;}
+}
+@-webkit-keyframes slider {
+	0%, 18% {margin-left: 0;}
+	20%, 38% {margin-left: -100%;}
+	40%, 58% {margin-left: -200%;}
+	60%, 78% {margin-left: -300%;}
+	80%, 99.9% {margin-left: -400%;}
+	100% {margin-left: 0;}
+}
+.slider li:first-child {
+	animation: slider 20s ease-out infinite;
+	-webkit-animation: slider 20s ease-out infinite;
+}
+
+/* pause animation on mouse over */
+.slider:hover li:first-child {
+	animation-play-state:paused;
+	-webkit-animation-play-state: paused;
+}
