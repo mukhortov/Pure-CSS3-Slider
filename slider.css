@@ -5,7 +5,7 @@
 
 /* Page Style */
 body {
-	font: normal 14px Helvetica Neue, Arial, sans-serif;
+	font: normal 14px 'Helvetica Neue', Arial, sans-serif;
 	background: #fafafa;
 }
 h1 {
@@ -44,7 +44,7 @@ p {
 
 .slider li {
 	display: inline-block;
-	word-spacing: normal; /* inline elements spacing */
+	word-spacing: normal; /* restoring spacing */
 	letter-spacing: normal;
 }
 
@@ -71,6 +71,6 @@ p {
 
 /* pause animation on mouse over */
 .slider:hover li:first-child {
-	animation-play-state:paused;
+	animation-play-state: paused;
 	-webkit-animation-play-state: paused;
 }
